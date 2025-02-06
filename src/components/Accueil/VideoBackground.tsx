@@ -1,6 +1,6 @@
 import type React from "react";
 import { useEffect } from "react";
-import video from "../assets/images/Godefroy.mp4";
+import video from "../../assets/images/Godefroy.mp4";
 import "./VideoBackground.css";
 
 const VideoBackground: React.FC = () => {

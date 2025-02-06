@@ -9,8 +9,10 @@ function App() {
 
 	return (
 		<>
+    <div id="appPage">
 			<VideoBackground />
 			<CardShop />
+    </div>
 		</>
 	);
 }
