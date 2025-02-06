@@ -1,0 +1,204 @@
+.payment-form-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
+	min-height: 100vh;
+	background-image: url("../assets/images/GhiPay.jpeg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #a98167; /* Couleur de fond marron */
+}
+
+.payment-form-card {
+	background: rgba(255, 255, 255, 0.9); /* Fond semi-transparent */
+	border-radius: 12px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	width: 100%;
+	max-width: 700px;
+	padding: 2rem;
+}
+
+.payment-form-header {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.payment-form-header h2 {
+	color: #5b3a29; /* Couleur marron pour le texte */
+	font-size: 1.75rem;
+	margin-bottom: 0.5rem;
+}
+
+.payment-form-header p {
+	color: #5b3a29; /* Couleur marron pour le texte */
+	font-size: 0.95rem;
+}
+
+.icon-credit-card {
+	width: 150px; /* Réduction de la largeur */
+	height: 75px; /* Réduction de la hauteur */
+	margin: 0 auto 1rem;
+	background-image: url("../../assets/DALLE_2025-02-06_12.42.17_-_A_detailed_and_realistic_illustration_of_a_bow_and_arrow_pointing_downward._The_bow_is_crafted_from_elegant_wood_with_intricate_carvings_and_the_arro.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain; /* Assure que l'image est contenue dans le cadre */
+}
+
+.payment-form {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.form-row {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+}
+
+.form-group label {
+	font-size: 0.95rem;
+	font-weight: 500;
+	color: #5b3a29; /* Couleur marron pour le texte */
+}
+
+.card-input-container {
+	position: relative;
+}
+
+.card-type-icon {
+	position: absolute;
+	right: 12px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 32px;
+	height: 20px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.form-group input {
+	padding: 0.75rem 1rem;
+	border: 1.5px solid #a98167; /* Couleur marron clair pour les bordures */
+	border-radius: 8px;
+	font-size: 1rem;
+	transition: all 0.2s ease;
+	background-color: #d5c7a3; /* Fond de la carte */
+	color: #5b3a29; /* Couleur marron pour le texte */
+}
+
+.form-group input:focus {
+	outline: none;
+	border-color: #5b3a29; /* Couleur marron pour la bordure au focus */
+	box-shadow: 0 0 0 3px rgba(91, 58, 41, 0.1);
+}
+
+.error-message {
+	color: #dc3545;
+	font-size: 0.85rem;
+	margin-top: 0.25rem;
+}
+
+.success-message {
+	background-color: #d4edda;
+	color: #155724;
+	padding: 1rem;
+	border-radius: 8px;
+	text-align: center;
+	margin-top: 1rem;
+}
+
+.submit-button {
+	background-color: #5b3a29; /* Couleur marron pour le bouton */
+	color: white;
+	padding: 1rem;
+	border: none;
+	border-radius: 8px;
+	font-size: 1rem;
+	font-weight: 500;
+	cursor: pointer;
+	transition: background-color 0.2s;
+	margin-top: 1rem;
+}
+
+.submit-button:hover:not(:disabled) {
+	background-color: #a98167; /* Couleur marron clair au survol */
+}
+
+.submit-button:disabled {
+	opacity: 0.7;
+	cursor: not-allowed;
+}
+
+.submit-button.submitting {
+	position: relative;
+	padding-left: 2.5rem;
+}
+
+.submit-button.submitting::before {
+	content: "";
+	position: absolute;
+	left: 1rem;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 1rem;
+	height: 1rem;
+	border: 2px solid transparent;
+	border-top-color: white;
+	border-radius: 50%;
+	animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+	to {
+		transform: translateY(-50%) rotate(360deg);
+	}
+}
+
+@media (max-width: 640px) {
+	.payment-form-container {
+		padding: 1rem;
+	}
+
+	.payment-form-card {
+		padding: 1.5rem;
+	}
+
+	.form-row {
+		grid-template-columns: 1fr;
+	}
+
+	.payment-form-header h2 {
+		font-size: 1.5rem;
+	}
+
+	.form-group input {
+		font-size: 16px;
+	}
+}
+
+input[placeholder="1234 5678 9012 3456"] {
+	letter-spacing: 0.5px;
+	font-family: monospace;
+}
+
+input[placeholder="123"] {
+	letter-spacing: 0.5px;
+	font-family: monospace;
+	text-align: center;
+}
+
+input[placeholder="MM/YY"] {
+	letter-spacing: 0.5px;
+	font-family: monospace;
+	text-align: center;
+}
