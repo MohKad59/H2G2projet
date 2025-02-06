@@ -1,0 +1,51 @@
+.contact-container {
+	background-color: #d5c7a3; /* Fond de la carte */
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	color: #5b3a29; /* Couleur marron pour le texte */
+}
+
+.contact-container h1 {
+	font-size: 2em;
+	margin-bottom: 20px;
+}
+
+.contact-container form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contact-container label {
+	margin: 10px 0 5px;
+	font-size: 1.2em;
+}
+
+.contact-container input,
+.contact-container textarea {
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #a98167; /* Couleur marron clair pour les bordures */
+	background-color: #fff;
+	color: #5b3a29; /* Couleur marron pour le texte */
+	width: 100%;
+	max-width: 400px;
+}
+
+.contact-container button {
+	background-color: #5b3a29; /* Couleur marron pour le bouton */
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	font-size: 1em;
+	border-radius: 8px;
+	cursor: pointer;
+	margin-top: 20px;
+	transition: background-color 0.3s;
+}
+
+.contact-container button:hover {
+	background-color: #a98167; /* Couleur marron clair au survol */
+}
