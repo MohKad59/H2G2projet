@@ -18,10 +18,10 @@ const Accueil: React.FC<AccueilProps> = ({ products }) => {
 	return (
 		<div className="accueil-container">
 			<VideoBackground />
-			<div className="content">
+			<div className="accueil-content">
 				<h1>Bienvenue sur notre boutique en ligne</h1>
 				<p>Découvrez nos produits exclusifs et ajoutez-les à votre panier.</p>
-				<Galerie products={products} />
+				<Galerie products={products.armes} />
 			</div>
 		</div>
 	);

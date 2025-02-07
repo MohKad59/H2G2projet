@@ -2,6 +2,7 @@ import type React from "react";
 import { useEffect, useState } from "react";
 import CardShop from "../cardShop/cardShop/CardShop";
 
+import "./Galerie.css";
 interface Product {
 	id: number;
 	name: string;
@@ -14,21 +15,9 @@ interface GalerieProps {
 }
 
 const Galerie: React.FC<GalerieProps> = ({ products }) => {
-	const [error, setError] = useState<string | null>(null);
-
-	useEffect(() => {
-		if (products.length === 0) {
-			setError("No products available.");
-		}
-	}, [products]);
-
-	if (error) {
-		return <div>{error}</div>;
-	}
-
 	return (
-		<div id="galerie">
-			{products.map((product) => (
+		<div id="gal-galeriesGlobal">
+			{products?.map((product) => (
 				<CardShop key={product.id} product={product} />
 			))}
 		</div>

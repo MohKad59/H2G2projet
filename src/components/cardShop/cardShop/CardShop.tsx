@@ -5,9 +5,9 @@ import ButtonAdd from "./ButtonAdd";
 
 interface Product {
 	id: number;
-	name: string;
-	image: string;
-	price: number;
+	nom: string;
+	url: string;
+	Prix: number;
 }
 
 interface CardShopProps {
@@ -16,13 +16,13 @@ interface CardShopProps {
 
 const CardShop: React.FC<CardShopProps> = ({ product }) => {
 	return (
-		<div id="cardShop">
-			<img src={product.image} alt={product.name} className="imgProduct" />
-			<figcaption className="infoCardShop">
-				<div className="nameProduct">
-					<p>{product.name}</p>
-					<div className="containerPriceProduct">
-						<p className="priceProduct">Prix : {product.price} €</p>
+		<div id="cs-cardShop">
+			<img src={product.url} alt={product.nom} className="cs-imgProduct" />
+			<figcaption className="cs-infoCardShop">
+				<div className="cs-nameProduct">
+					<p className="cs-ProductName">{product.nom}</p>
+					<div className="cs-containerPriceProduct">
+						<p className="cs-priceProduct">Prix : {product.Prix} </p>
 					</div>
 					<ButtonAdd />
 				</div>

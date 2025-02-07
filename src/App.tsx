@@ -29,6 +29,7 @@ const App: React.FC = () => {
 				return response.json();
 			})
 			.then((data) => {
+				console.log(data);
 				setProducts(data);
 			})
 			.catch((error) => {

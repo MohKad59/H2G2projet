@@ -1,71 +1,70 @@
 body {
-  margin: 0;
-  background-color: #A98167;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	margin: 0;
+	background-color: #a98167;
+	/* height: 100vh; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #containerCard {
-  background-color: #D5C7A3;
-  width: 1200px;
-  height: 600px;
+	background-color: #d5c7a3;
+	width: 1200px;
+	height: 600px;
 
-  .titleCart {
-    font-size: 40px;
-    margin-left: 40px;
-  }
+	.titleCart {
+		font-size: 40px;
+		margin-left: 40px;
+	}
 
-  .selectedProduct {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 15px;
-    border-bottom: 1px solid;
+	.selectedProduct {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 15px;
+		border-bottom: 1px solid;
 
-    .containerProduct {
-      display: flex;
-      gap: 40px;
-      margin-left: 40px;
+		.containerProduct {
+			display: flex;
+			gap: 40px;
+			margin-left: 40px;
 
-      .placeProduct {
-        width: 207px;
-        height: 169px;
-        border-radius: 20px;
-        background-color: #fff;
-      }
+			.placeProduct {
+				width: 207px;
+				height: 169px;
+				border-radius: 20px;
+				background-color: #fff;
+			}
 
-      .refProduct {
-        font-size: 30px;
+			.refProduct {
+				font-size: 30px;
 
-        p {
-          margin-top: 0;
-        }
-      }
-    }
+				p {
+					margin-top: 0;
+				}
+			}
+		}
 
-    .containerQuantity {
-      display: flex;
-      gap: 40px;
-      align-items: center;
-      margin-right: 40px;
+		.containerQuantity {
+			display: flex;
+			gap: 40px;
+			align-items: center;
+			margin-right: 40px;
 
-      .quantitySelected {
-        font-size: 30px;
-      }
+			.quantitySelected {
+				font-size: 30px;
+			}
 
-      .stopButton {
-        max-height: 40px;
-        background-color: #D5C7A3;
-        color: #fff;
-        border: none;
-        cursor: pointer;
+			.stopButton {
+				max-height: 40px;
+				background-color: #d5c7a3;
+				color: #fff;
+				border: none;
+				cursor: pointer;
 
-
-        img {
-          height: 40px;
-        }
-      }
-    }
-  }
+				img {
+					height: 40px;
+				}
+			}
+		}
+	}
 }

@@ -1,0 +1,8 @@
+#gal-galeriesGlobal {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 80px 0 0 0;
+	justify-content: center;
+	/* align-items: center; */
+}
