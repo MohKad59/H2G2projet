@@ -6,14 +6,12 @@ import Contact from "./components/Contact/Contact";
 import Paiement from "./components/Paiement/Paiement";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
-import VideoBackground from "./components/Accueil/VideoBackground";
 
 function App() {
 	return (
 		<Router>
 			<div className="app-container">
-				<VideoBackground /> {/* La vidéo est rendue ici */}
-				<Navbar /> {/* La navbar est fixée en haut */}
+				<Navbar />
 				<div className="content-container">
 					<Routes>
 						<Route path="/" element={<Accueil />} />
@@ -22,7 +20,7 @@ function App() {
 						<Route path="/paiement" element={<Paiement />} />
 					</Routes>
 				</div>
-				<Footer /> {/* Le footer reste en bas */}
+				<Footer />
 			</div>
 		</Router>
 	);
