@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import "./App.css";
 import Accueil from "./components/Accueil/Accueil";
-import Panier from "./components/Panier/Panier";
 import Contact from "./components/Contact/Contact";
 import Paiement from "./components/Paiement/Paiement";
+import SelectProduct from "./components/cartPage/SelectProduct";
 
 function App() {
 	return (
@@ -15,7 +15,7 @@ function App() {
 							<Link to="/">Accueil</Link>
 						</li>
 						<li>
-							<Link to="/panier">Panier</Link>
+							<Link to="/SelectProduct">Panier</Link>
 						</li>
 						<li>
 							<Link to="/contact">Contact</Link>
@@ -27,7 +27,7 @@ function App() {
 				</nav>
 				<Routes>
 					<Route path="/" element={<Accueil />} />
-					<Route path="/panier" element={<Panier />} />
+					<Route path="/SelectProduct" element={<SelectProduct />} />
 					<Route path="/contact" element={<Contact />} />
 					<Route path="/paiement" element={<Paiement />} />
 				</Routes>
