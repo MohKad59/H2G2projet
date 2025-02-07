@@ -5,14 +5,12 @@ import Contact from "./components/Contact/Contact";
 import Paiement from "./components/Paiement/Paiement";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
-import VideoBackground from "./components/Accueil/VideoBackground";
 import SelectProduct from "./components/cartPage/SelectProduct";
 
 function App() {
 	return (
 		<Router>
 			<div className="app-container">
-				<VideoBackground /> {/* La vidéo est rendue ici */}
 				<Navbar /> {/* La navbar est fixée en haut */}
 				<div className="content-container">
 					<Routes>
