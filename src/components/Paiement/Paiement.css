@@ -8,11 +8,11 @@
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-color: #a98167; /* Couleur de fond marron */
+	background-color: #a98167;
 }
 
 .payment-form-card {
-	background: rgba(255, 255, 255, 0.9); /* Fond semi-transparent */
+	background: rgba(255, 255, 255, 0.9);
 	border-radius: 12px;
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 	width: 100%;
@@ -26,24 +26,24 @@
 }
 
 .payment-form-header h2 {
-	color: #5b3a29; /* Couleur marron pour le texte */
+	color: #5b3a29;
 	font-size: 1.75rem;
 	margin-bottom: 0.5rem;
 }
 
 .payment-form-header p {
-	color: #5b3a29; /* Couleur marron pour le texte */
+	color: #5b3a29;
 	font-size: 0.95rem;
 }
 
 .icon-credit-card {
-	width: 150px; /* Réduction de la largeur */
-	height: 75px; /* Réduction de la hauteur */
+	width: 150px;
+	height: 75px;
 	margin: 0 auto 1rem;
 	background-image: url("../../assets/DALLE_2025-02-06_12.42.17_-_A_detailed_and_realistic_illustration_of_a_bow_and_arrow_pointing_downward._The_bow_is_crafted_from_elegant_wood_with_intricate_carvings_and_the_arro.png");
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: contain; /* Assure que l'image est contenue dans le cadre */
+	background-size: contain;
 }
 
 .payment-form {
@@ -67,7 +67,7 @@
 .form-group label {
 	font-size: 0.95rem;
 	font-weight: 500;
-	color: #5b3a29; /* Couleur marron pour le texte */
+	color: #5b3a29;
 }
 
 .card-input-container {
@@ -88,17 +88,17 @@
 
 .form-group input {
 	padding: 0.75rem 1rem;
-	border: 1.5px solid #a98167; /* Couleur marron clair pour les bordures */
+	border: 1.5px solid #a98167;
 	border-radius: 8px;
 	font-size: 1rem;
 	transition: all 0.2s ease;
-	background-color: #d5c7a3; /* Fond de la carte */
-	color: #5b3a29; /* Couleur marron pour le texte */
+	background-color: #d5c7a3;
+	color: #5b3a29;
 }
 
 .form-group input:focus {
 	outline: none;
-	border-color: #5b3a29; /* Couleur marron pour la bordure au focus */
+	border-color: #5b3a29;
 	box-shadow: 0 0 0 3px rgba(91, 58, 41, 0.1);
 }
 
@@ -118,7 +118,7 @@
 }
 
 .submit-button {
-	background-color: #5b3a29; /* Couleur marron pour le bouton */
+	background-color: #5b3a29;
 	color: white;
 	padding: 1rem;
 	border: none;
@@ -131,7 +131,7 @@
 }
 
 .submit-button:hover:not(:disabled) {
-	background-color: #a98167; /* Couleur marron clair au survol */
+	background-color: #a98167;
 }
 
 .submit-button:disabled {

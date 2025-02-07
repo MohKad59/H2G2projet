@@ -1,10 +1,10 @@
 .contact-container {
-	background-color: #d5c7a3; /* Fond de la carte */
+	background-color: #d5c7a3;
 	padding: 20px;
 	border-radius: 8px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	text-align: center;
-	color: #5b3a29; /* Couleur marron pour le texte */
+	color: #5b3a29;
 }
 
 .contact-container h1 {
@@ -27,15 +27,15 @@
 .contact-container textarea {
 	padding: 10px;
 	border-radius: 5px;
-	border: 1px solid #a98167; /* Couleur marron clair pour les bordures */
+	border: 1px solid #a98167;
 	background-color: #fff;
-	color: #5b3a29; /* Couleur marron pour le texte */
+	color: #5b3a29;
 	width: 100%;
 	max-width: 400px;
 }
 
 .contact-container button {
-	background-color: #5b3a29; /* Couleur marron pour le bouton */
+	background-color: #5b3a29;
 	color: white;
 	border: none;
 	padding: 10px 20px;
@@ -47,5 +47,5 @@
 }
 
 .contact-container button:hover {
-	background-color: #a98167; /* Couleur marron clair au survol */
+	background-color: #a98167;
 }
