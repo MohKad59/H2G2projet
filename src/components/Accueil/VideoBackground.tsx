@@ -4,22 +4,22 @@ import video from "../../assets/images/Godefroy.mp4";
 import "./VideoBackground.css";
 
 const VideoBackground: React.FC = () => {
-	useEffect(() => {
-		const handleScroll = () => {
-			const videoElement = document.querySelector(
-				".video-background video",
-			) as HTMLVideoElement;
-			const scrollPosition = window.pageYOffset;
-			if (videoElement) {
-				videoElement.style.transform = `translate(-50%, calc(-50% + ${scrollPosition * 0.5}px))`;
-			}
-		};
+	// useEffect(() => {
+	// 	const handleScroll = () => {
+	// 		const videoElement = document.querySelector(
+	// 			".video-background video",
+	// 		) as HTMLVideoElement;
+	// 		const scrollPosition = window.pageYOffset;
+	// 		if (videoElement) {
+	// 			videoElement.style.transform = `translate(-50%, calc(-50% + ${scrollPosition * 0.5}px))`;
+	// 		}
+	// 	};
 
-		window.addEventListener("scroll", handleScroll);
-		return () => {
-			window.removeEventListener("scroll", handleScroll);
-		};
-	}, []);
+	// 	window.addEventListener("scroll", handleScroll);
+	// 	return () => {
+	// 		window.removeEventListener("scroll", handleScroll);
+	// 	};
+	// }, []);
 
 	return (
 		<div className="video-background">

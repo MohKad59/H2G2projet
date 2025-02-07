@@ -1,25 +1,28 @@
-/* App.css */
-
-.app-container {
+* {
+	margin: 0px;
+	padding: 0px;
+}
+/* .app-container {
 	position: relative;
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
-}
+} */
 
-.content-container {
+/* .content-container {
 	flex: 1;
 	position: relative;
-	z-index: 2; /* Assure que le contenu est au-dessus de la vidéo */
+	z-index: 2;
 	padding: 2rem;
-	margin-top: 80px; /* Espace pour la navbar fixée */
-}
+	margin-top: 80px; 
+  
+} */
 
-.footer {
+/* .footer {
 	position: relative;
-	z-index: 2; /* Assure que le footer est au-dessus de la vidéo */
-	margin-top: auto; /* Pousse le footer vers le bas */
-}
+	z-index: 2;
+	margin-top: auto; 
+} */
 
 /* #root {
   max-width: 1280px;
